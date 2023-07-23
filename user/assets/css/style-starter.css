@@ -18077,7 +18077,7 @@ nav ul li a:hover {
 }
 
 .bg1 {
-  background: url(../images/banner1.jpg) no-repeat top;
+  background: url(../images/frontbanner.jpg) no-repeat top;
   background-size: cover;
 }
 
@@ -19342,7 +19342,7 @@ form.subscribe {
 }
 /*--//search--*/
 .breadcrumb-bg-about {
-  background: url(../images/banner3.jpg) no-repeat 0px 0px;
+  background: url(../images/banner_faces.png) no-repeat 0px 0px;
   background-size: cover;
   background-size: cover;
   position: relative;

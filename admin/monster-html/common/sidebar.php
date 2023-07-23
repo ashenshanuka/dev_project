@@ -33,6 +33,13 @@
                                 href="m_patient.php" aria-expanded="false"><i class="me-3 fa fa-user"
                                     aria-hidden="true"></i><span class="hide-menu">Manage Clients</span></a>
                         </li>
+
+                         <!-- Manage Reports -->
+                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="m_reports.php" aria-expanded="false"><i class="me-3 fa fa-user"
+                                    aria-hidden="true"></i><span class="hide-menu">Manage Reports</span></a>
+                        </li>
+
                         <!-- Logout -->
                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="logout.php" aria-expanded="false"><i class="me-3 fas fa-sign-out-alt"

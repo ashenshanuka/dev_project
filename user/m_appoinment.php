@@ -53,60 +53,70 @@ Author URL: http://w3layouts.com
 </section>
 <!--//breadcrumb-->
  <!-- contact-form 2 -->
-  <section class="w3l-contact-2 py-5" id="contact">
-      <div class="form-41-mian py-5">
-      <div class="container py-lg-4">
-        <div class="row align-form-map">
-        
-          <div class="title-content text-left">
-            <h3 class="hny-title mb-lg-5 mb-4">Your Appoinments</h3>
-          </div>
 
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Appoinment ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Status</th>
-                <th scope="col">Booked Date</th>
-                <th scope="col">Booked time</th>
-                <th scope="col">Complete Payment Process</th>
-                <th scope="col">Meeting Link</th>
-              </tr>
-            </thead>
+
+ <section class="w3l-contact-2 py-5" id="contact">
+  <div class="form-41-mian py-5">
+    <div class="container py-lg-4">
+      <div class="row align-form-map">
+        <div class="title-content text-left">
+          <h3 class="hny-title mb-lg-5 mb-4">Your Appointments</h3>
+        </div>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">App. ID</th>
+              <th scope="col">Counseller Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Status</th>
+              <th scope="col">Booked Date</th>
+              <th scope="col">Booked Time</th>
+              <th scope="col">Pay Here</th>
+              <th scope="col">Meeting Link</th>
+            </tr>
+          </thead>
+          <tbody>
             <?php 
-              while ($row = $result->fetch_object()) {
-              
+            while ($row = $result->fetch_object()) {
+              // Fetch the doctor's name from the doctor table using the d_id from the appointment table
+              $doctor_id = $row->d_id;
+              $doctor_result = $obj->query("SELECT name, zoom FROM doctor WHERE d_id = '$doctor_id'");
+              $doctor_row = $doctor_result->fetch_object();
+              $doctor_name = $doctor_row ? $doctor_row->name : 'N/A';
+              $meeting_link = $doctor_row ? $doctor_row->zoom : null;
             ?>
-            <tbody>
+            <tr>
               <td><?php echo $row->b_id; ?></td>
-              <td><?php echo $row->name; ?></td>
+              <td><?php echo $doctor_name; ?></td>
               <td><?php echo $row->msg; ?></td>
               <td><?php echo $row->status; ?></td>
               <td><?php echo $row->book_date; ?></td>
-               
-             
-              <?php if ($row->status == 'accepted' && $row->payment_status == 'pending'){ ?>
-              <td><a href="payment.php?a_id=<?php echo $row->b_id; ?>"><button class="btn btn-danger">Complete payment</button></a></td>
-            <?php } elseif($row->status='accepted' && $row->payment_status=='completed'){?>
-              <td>Payment completed</td>
-              <?php } elseif ($row->status =='rejected') { ?>
-                <td>Your appoinment rejected by doctor</td>
-             <?php } ?>
-                
-            </tbody>
-          <?php } ?>
-          </table>
-        </div>
-        </div>
+              <td><?php echo $row->book_time; ?></td>
+              <?php if ($row->status == 'accepted' && $row->payment_status == 'pending') { ?>
+                <td><a href="payment.php?a_id=<?php echo $row->b_id; ?>"><button class="btn btn-danger">Complete payment</button></a></td>
+              <?php } elseif ($row->status == 'accepted' && $row->payment_status == 'completed') { ?>
+                <td>Payment completed</td>
+              <?php } elseif ($row->status == 'rejected') { ?>
+                <td>Your appointment rejected by the doctor</td>
+              <?php } ?>
+              <td>
+                <?php 
+                  if ($row->status == 'accepted' && $meeting_link) {
+                    echo '<a href="' . $meeting_link . '" target="_blank">Join Now</a>';
+                  } else {
+                    echo 'N/A';
+                  }
+                ?>
+              </td>
+            </tr>
+            <?php } ?>
+          </tbody>
+        </table>
       </div>
-      </div>
-     <!-- <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5832020013786!2d72.62799931496815!3d23.039070984944615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8691219fcc49%3A0x3b9e0bbd566d855d!2sBrainKlick%20Technologies!5e0!3m2!1sen!2sin!4v1672226949385!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div> -->
-  
- </section>
+    </div>
+  </div>
+</section>
 <!-- /contact-form-2 -->
 
   <!-- /contact1 -->

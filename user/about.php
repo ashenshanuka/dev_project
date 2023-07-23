@@ -9,7 +9,7 @@ Author URL: http://w3layouts.com
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Kovid - Medical Category Bootstrap Responsive Template | About : W3layouts</title>
+  <title>MindBoost - About Us</title>
   <!-- google fonts -->
   <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Template CSS -->
@@ -29,8 +29,8 @@ Author URL: http://w3layouts.com
                     <h2 class="title AboutPageBanner">
                   About Us   </h2>
                               <p class="inner-page-para mt-2">
-                                Prevent the Spread
-                                Stay at Home, Stay Safe             </p>
+                              Healing Hearts, 
+                              Restoring Hope.           </p>
           </div>
           <div class="w3breadcrumb-right">
                 <ul class="breadcrumbs-custom-path">
@@ -57,10 +57,8 @@ Author URL: http://w3layouts.com
             </div>
           <div class="col-lg-6 mt-lg-0 mt-5 about-right-faq align-self">
             <h5 class="title-subw3hny mb-1">About Us</h5>
-            <h3 class="title-w3l">Life doesn’t get easier or more forgiving, we get stronger and more resilient.</h3>
-            <p class="mt-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Non quae, fugiat consequatur voluptatem ad.</p>
+            <h3 class="title-w3l">Breaking Barriers, Building Bridges</h3>
+            <p class="mt-4">Our mental health care center strives to build bridges of understanding, breaking barriers to mental health care. Our online and in-person services make support accessible to all who seek it.</p>
             <a class="btn btn-primary btn-style mt-md-5 mt-4 mr-md-4 mr-3" href="#url">
               Read More </a>
           </div>
@@ -69,34 +67,31 @@ Author URL: http://w3layouts.com
         <div class="row justify-content-center mt-5 pt-lg-5 AboutFeatures">
           <div class="col-lg-4 col-md-6 grids-feature">
             <div class="area-box">
-              <i class="fas fa-theater-masks" aria-hidden="true"></i>
+              <i class="fas fa-comments" aria-hidden="true"></i>
               <div class="area-box-info">
                 <h4><a href="#url" class="title-head">
-                  Wear A Face Mask</a></h4>
-                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,adipisicing
-                      elit.</p>
+                Seek professional help when needed</a></h4>
+                    <p>They provide valuable support, guidance, and evidence-based interventions to improve emotional well-being and cope with life's difficulties.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
             <div class="area-box">
-              <i class="fas fa-hands-wash" aria-hidden="true"></i>
+              <i class="fas fa-bed" aria-hidden="true"></i>
               <div class="area-box-info">
                 <h4><a href="#url" class="title-head">
-                  Wash Your Hands</a></h4>
-                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,adipisicing
-                      elit.</p>
+                Getting enough sleep</a></h4>
+                    <p>allows the brain to rest and rejuvenate, supporting cognitive functions and emotional regulation.Getting enough quality sleep positively impacts mood, concentration, and overall mental and physical health. </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
             <div class="area-box">
-              <i class="fas fa-people-arrows" aria-hidden="true"></i>
+              <i class="fas fa-balance-scale" aria-hidden="true"></i>
               <div class="area-box-info">
                 <h4><a href="#url" class="title-head">
-                  Avoid Close Contact</a></h4>
-                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,adipisicing
-                      elit.</p>
+                Maintain a work-life balance</a></h4>
+                    <p>Finding a healthy equilibrium between work-related responsibilities and personal life. Prioritizing self-care, setting boundaries, and taking breaks can help reduce stress and improve overall mental well-being.</p>
               </div>
             </div>
           </div>
@@ -195,7 +190,7 @@ Author URL: http://w3layouts.com
       <div class="row cwp23-content align-items-center">
         <div class="col-lg-6 pr-lg-5">
           <h5 class="title-subw3hny mb-3">Why Choose Us</h5>
-          <h3 class="title-w3l">Safety brings first aid to the uninjured.</h3>
+          <h3 class="title-w3l">Your Mental Well-being, Our Guiding Light.</h3>
           <div class="cwp23-text-cols mt-lg-5 mt-4">
             <div class="column">
               <div class="icon mb-4">

@@ -30,7 +30,7 @@ Author URL: http://w3layouts.com
     <div class="banner-wrap">
         <div class="banner-slider">
             <!-- hero slide start -->
-            <div class="banner-slide bg2">
+            <div class="banner-slide bg1">
                 <div class="container">
                     <div class="hero-content">
                         <h1 data-animation="flipInX" data-delay="0.8s" data-color="#fff">
